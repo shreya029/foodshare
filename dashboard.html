@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Tracking Dashboard | FoodShare</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon1.jpg">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">FoodShare</div>
+            <ul>
+                <li><a href="index.html"><img src="images/home.jpg" class="nav-icon">Home</a></li>
+                <!--<li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="request.html">Request</a></li>
+                <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="#" id="logout">Logout</a></li>-->
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="dashboard">
+            <h1>Food Tracking Dashboard</h1>
+            
+            <!--<div class="dashboard-actions">
+                <button id="addFoodItemBtn" class="btn btn-primary">
+                    <i class="fas fa-plus"></i> Add Food Item
+                </button>
+                <div class="filter-controls">
+                    <select id="statusFilter" class="form-control">
+                        <option value="">All Statuses</option>
+                        <option value="available">Available</option>
+                        <option value="expiring">Expiring Soon</option>
+                        <option value="collected">Collected</option>
+                        <option value="expired">Expired</option>
+                    </select>
+                    <select id="categoryFilter" class="form-control">
+                        <option value="">All Categories</option>
+                        <option value="Perishable">Perishable</option>
+                        <option value="Non-Perishable">Non-Perishable</option>
+                        <option value="Dairy">Dairy</option>
+                        <option value="Meat">Meat</option>
+                        <option value="Produce">Produce</option>
+                        <option value="Bakery">Bakery</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>-->
+            
+            <div class="dashboard-stats">
+                <div class="stat-card">
+                    <h3>Total Items</h3>
+                    <p id="totalItems">5</p>
+                   
+                </div>
+                <div class="stat-card">
+                    <h3>Available</h3>
+                    <p id="availableItems">3</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Expiring Soon</h3>
+                    <p id="expiringSoon">1</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Collected</h3>
+                    <p id="collectedItems">5</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Expired</h3>
+                    <p id="expiredItems">1</p>
+                </div>
+            </div>
+            
+        <!--   <div class="dashboard-charts">
+                <div class="chart-container">
+                    <canvas id="statusChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="categoryChart"></canvas>
+                </div>
+            </div>-->
+            
+            <div class="food-items-container">
+                <h2>Food Items</h2>
+                <div id="foodItemsList" class="food-items-list">
+                    <!-- Food items will be loaded here -->
+                     <P>rice</P>
+                     <p>biriyani</p>
+                    <p>chapati</p>
+                    <p>milk products</p>
+                    <p>pulav</p>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Add Food Item Modal -->
+   <!--- <div id="foodItemModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Add Food Item</h2>
+            <form id="foodItemForm">
+                <div class="form-group">
+                    <label for="foodName">Food Name</label>
+                    <input type="text" id="foodName" required>
+                </div>
+                <div class="form-group">
+                    <label for="foodCategory">Category</label>
+                    <select id="foodCategory" required>
+                        <option value="Perishable">Perishable</option>
+                        <option value="Non-Perishable">Non-Perishable</option>
+                        <option value="Dairy">Dairy</option>
+                        <option value="Meat">Meat</option>
+                        <option value="Produce">Produce</option>
+                        <option value="Bakery">Bakery</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="expiryDate">Expiry Date</label>
+                    <input type="date" id="expiryDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" id="quantity" min="1" value="1" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Add Item</button>
+            </form>
+        </div>
+    </div>-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

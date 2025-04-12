@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Food | FoodShare</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon1.jpg">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">FoodShare</div>
+            <ul>
+                <li><a href="index.html"><a href="index.html"><img src="images/home.jpg" alt="Home Icon" class="nav-icon">Home</a></li>    
+                <!--<li><a href="donate.html"><img src="images/icon1.jpg" alt="Home Icon" class="nav-icon">Donate</a></li>
+                <li><a href="request.html"><img src="images/req.jpg" alt="Home Icon" class="nav-icon">Request</a></li>-->
+                
+                
+
+              <!--<li><a href="login.html">Login</a></li>
+              <li><a href="#" id="logout">Logout</a></li>
+              <li><a href="donate.html">Donate</a></li>
+              <li><a href="dashboard.html">Dashboard</a></li>-->  
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="form-container">
+            <h2>Donate Food</h2>
+            <form id="donateForm">
+                <div class="form-group">
+                    <label for="foodName">Food Name</label>
+                    <input type="text" id="foodName" required>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantity</label>
+                    <input type="text" id="quantity" placeholder="e.g., 5 kg, 10 servings" required>
+                </div>
+                <div class="form-group">
+                    <label for="expiryDate">Expiry Date</label>
+                    <input type="date" id="expiryDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" placeholder="Any additional details about the food"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="pickupAddress">Pickup Address</label>
+                    <input type="text" id="pickupAddress" required>
+                </div>
+                <button type="submit" class="btn">Submit Donation</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

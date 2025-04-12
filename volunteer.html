@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Volunteer | FoodShare</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/icon1.jpg">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">FoodShare</div>
+      <ul>
+        <li><a href="index.html"><a href="index.html"><img src="images/home.jpg" alt="Home Icon" class="nav-icon">Home</a></li> 
+        <!--<li><a href="login.html">Login</a></li>-->
+        <li><a href="register.html"><img src="images/reg.jpg" class="nav-icon">Register</a></li>
+        <li><a href="donate.html"><img src="images/icon1.jpg" class="nav-icon">Donate</a></li>
+        <li><a href="request.html"><img src="images/req.jpg" class="nav-icon">Request</a></li>
+       <!--<li><a href="dashboard.html">Dashboard</a></li>
+
+        <li><a href="#" id="logout">Logout</a></li>--> 
+    </nav>
+  </header>
+  <main class="container volunteer-layout">
+    <section class="volunteer-image">
+      <img src="images/volunteers.png" alt="Volunteers group photo" class="volunteer-photo">
+    </section>
+
+  <main class="container">
+    <section class="form-container">
+      <h2>Volunteer With Us</h2>
+      <form id="volunteerForm" method="POST" action="http://localhost:5000/api/volunteer">
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="fullName" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="text" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="city">Location / City</label>
+          <input type="text" id="city" name="city" required>
+        </div>
+        <div class="form-group">
+          <label for="roles">Preferred Roles</label>
+          <input type="text" id="roles" name="roles" placeholder="e.g. Pickup, Delivery, Digital Support" required>
+        </div>
+        <div class="form-group">
+          <label for="availability">Availability</label>
+          <input type="text" id="availability" name="availability" placeholder="e.g. Weekends, 9AM-1PM" required>
+        </div>
+        <div class="form-group">
+          <label for="vehicle">Do you have a vehicle? (Yes/No)</label>
+          <input type="text" id="vehicle" name="vehicleOwnership" required>
+        </div>
+        <div class="form-group">
+          <label for="motivation">Why do you want to volunteer?</label>
+          <textarea id="motivation" name="motivation" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="emergencyContact">Emergency Contact</label>
+          <input type="text" id="emergencyContact" name="emergencyContact" required>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </section>
+
+    <section class="rewards-section" style="margin-top: 30px;">
+      <h3>Volunteer Rewards System</h3>
+      <div class="rewards-info">
+        <p>Earn stars for your contributions:</p>
+        <ul>
+          <li>⭐ 1 star per completed task</li>
+          <li>🏆 Special rewards at 10, 25, and 50 stars</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
